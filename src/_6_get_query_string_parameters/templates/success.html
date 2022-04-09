@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello page</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<body>
+<h3 style="margin-left: 50px;"><a href="/"><i class="fa fa-home"></i></a></h3>
+<center>
+	<h1>Your submitted form data</h1>
+	<br/>
+	<table border="2" cellpadding="20" cellspacing="5">
+		<tr>
+			<!-- Note that Jinja web Template engine has been used here!-->
+			<td>First Name</td>
+			<td>{{ first_name }}</td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td>{{ last_name }}</td>
+		</tr>
+	</table>
+</center>
+</body>
+</html>
