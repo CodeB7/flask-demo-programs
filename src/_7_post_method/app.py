@@ -4,6 +4,10 @@ from flask import render_template, request
 app = Flask(__name__)
 
 
+@app.route('/')
+def index():
+	return "Please <a href='/login'> click here </a> to login"
+
 @app.route('/login')
 def login():
 	return render_template('login.html')
